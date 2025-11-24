@@ -44,6 +44,7 @@ ocaml
 - **lists.ml** - List operations and common patterns
 - **tuples_records.ml** - Working with tuples and records
 - **modules.ml** - Module definitions and usage
+- **functors.ml** - Functor examples (parameterized modules)
 
 ## Compiling All Examples
 
@@ -63,7 +64,7 @@ done
 Remove compiled files:
 
 ```bash
-rm -f *.cmi *.cmo *.cmx *.o hello basics functions pattern_matching lists tuples_records modules
+rm -f *.cmi *.cmo *.cmx *.o hello basics functions pattern_matching lists tuples_records modules functors
 ```
 
 ## Using Dune (Recommended for Projects)
@@ -72,7 +73,7 @@ For a more structured approach, consider using Dune. Create a `dune` file:
 
 ```lisp
 (executables
- (names hello basics functions pattern_matching lists tuples_records modules))
+ (names hello basics functions pattern_matching lists tuples_records modules functors))
 ```
 
 Then build and run:
